@@ -5,6 +5,18 @@ A single page web app using [leaven][leaven] components from
 
 ## Usage
 
+```
+$ cd ~/tmp
+$ git clone https://github.com/palletops/bakery.git
+$ git checkout master
+$ cd example-web-app
+$ lein cljsbuild once
+$ lein repl
+user=> (start {})    ;; starts webserver on port 3000
+user=> (start-cljs-repl!)    ;; now refresh your browser
+;; clojurescript repl started
+```
+
 Clone the project, and checkout the `master` branch (to run the
 default `develop` branch you would need to `lein install` the top
 level [bakery][bakery] project first).
